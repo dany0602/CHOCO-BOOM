@@ -1,16 +1,25 @@
 body {
-  background-color: aquamarine;
+  background-color: #1b8b8f;
 }
 
-header,
+h1,
+h2,
+h3 {
+  font-size: 1.4em;
+  font-family: "PT Sans Narrow";
+}
+
 main {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header {
   border: 1px solid navy;
   text-align: center;
-  width: 70%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header a {
@@ -20,23 +29,67 @@ header a {
 }
 
 nav {
-  background-color: brown;
-font-size: 1.6em;
+  background-color: #613a2f;
+  font-size: 1.6em;
+
+}
+nav a:hover {
+  background-color: #917b6c;
 }
 
 main {
   border: 1px solid yellow;
-  width: 70%;
-  display:flex;
+  width: 80%;
+  display: flex;
 }
 
 section {
-  border:2px solid red;
-  width: 70%;
+  border: 2px solid red;
+  width: 67.3%;
+  color: white;
 }
 
 aside {
   border: 2px solid blue;
   width: 30%;
   background-color: white;
+  text-align: justify;
+  padding: 1rem;
+}
+
+aside h2 {
+  color: white;
+}
+
+h2 {
+  background-color: #613a2f;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 960px) {
+  main,
+  aside,
+  section,
+  header {
+    width: 100%;
+  }
+}
+
+@media (max-width:560px){
+  aside{
+    display: none;
+  }
+nav{
+display: flex;
+flex-direction: column;
+}
+nav a{
+padding: 1rem;
+}
+img {
+  width: 100%;
+ 
+}
 }
